@@ -1,9 +1,10 @@
+import numpy as np
+
 # a. define function
 def f(x):
     return np.sin(x)+0.05*x**2
 
 # b. solution using a loop
-import numpy as np
 N = 100
 x_vec = np.linspace(-10,10,N)
 f_vec = np.empty(N)
