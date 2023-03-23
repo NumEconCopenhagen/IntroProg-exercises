@@ -17,6 +17,8 @@ for i,x in enumerate(x_vec):
     if f_now < f_best:
         x_best = x
         f_best = f_now
+print(x_best)
+
 
 # c. solution using scipy optmize
 from scipy import optimize
