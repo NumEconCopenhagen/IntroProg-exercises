@@ -46,4 +46,4 @@ def bisection(f,a,b,tol=1e-8):
     return (a_n + b_n)/2
 
 result = bisection(f,0,1,1e-8)
-print(f'result is {result:.3f} with f({result:.3f}) = {f(result):.16f}')
+print(result)
