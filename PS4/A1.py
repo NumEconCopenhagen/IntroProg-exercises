@@ -1,5 +1,7 @@
 # a. load
-nah1_true = dst.get_data(table_id = 'NAH1', variables={'TRANSAKT':['*'], 'PRISENHED':['*'], 'TID':['*']})
+nah1_api = DstApi('NAH1') 
+params = nah1_api._define_base_params(language='en')
+nah1_true = nah1_api.get_data(params=params)
 
 # b. rename and replace
 nah1_true.rename(columns=columns_dict,inplace=True)
@@ -22,3 +24,6 @@ nah1_true.value = nah1_true.value.astype('float')
 
 # d. summary statistics
 nah1_true.groupby(['variable','unit']).describe()
+
+# f. Sort by year 
+nah1_true.sort_values(by='year',inplace=True)
