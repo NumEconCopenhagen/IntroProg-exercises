@@ -456,7 +456,7 @@ color{background}]
 
 \begin_layout Plain Layout
 
-for i in range(5)
+for i in range(5):
 \end_layout
 
 \begin_layout Plain Layout
@@ -517,7 +517,7 @@ color{background}]
 
 \begin_layout Plain Layout
 
-for i in range(5)
+for i in range(5):
 \end_layout
 
 \begin_layout Plain Layout
@@ -739,6 +739,11 @@ color{background}]
 
 \begin_layout Plain Layout
 
+import numpy as np
+\end_layout
+
+\begin_layout Plain Layout
+
 print(0.1 + 0.2 == 0.3)
 \end_layout
 
@@ -894,7 +899,7 @@ class SquareClass:
 
 \begin_layout Plain Layout
 
-	def __init__(length,width):
+	def __init__(self,length,width):
 \end_layout
 
 \begin_layout Plain Layout
