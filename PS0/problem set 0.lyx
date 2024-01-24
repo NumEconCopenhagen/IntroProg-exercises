@@ -625,7 +625,7 @@ end{lstlisting}
 \begin_layout Itemize
 
 \series bold
-functions
+functions and scope
 \end_layout
 
 \begin_deeper
@@ -660,7 +660,7 @@ def f(x):
 
 \begin_layout Plain Layout
 
-	return x+a
+	return x+a # a is global variable
 \end_layout
 
 \begin_layout Plain Layout
@@ -670,7 +670,7 @@ def g(x,a=1):
 
 \begin_layout Plain Layout
 
-	return x+a
+	return x+a # a is local variable
 \end_layout
 
 \begin_layout Plain Layout
