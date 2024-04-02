@@ -12,7 +12,7 @@ nah1 = nah1[I]
 # d. correct year column data
 I = nah1['year'].notna()
 J = nah1['year'].isna()
-nah1.loc[J,['year']] = nah1.loc[I,['year']].values
+nah1.loc[J,['year']] = nah1.loc[I,['year']].to_numpy()
 
 # e. only keep rows with '2010-prices, chained values'
 I = nah1['Unnamed: 1'] == '2010-prices, chained values'
